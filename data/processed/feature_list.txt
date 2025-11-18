@@ -1,0 +1,33 @@
+ORGANIZATION_ID
+SHELTER_ID
+LOCATION_ID
+PROGRAM_ID
+SERVICE_USER_COUNT
+CAPACITY_ACTUAL_BED
+CAPACITY_FUNDING_BED
+lag_1
+lag_7
+roll_mean_7
+SECTOR_Men
+SECTOR_Mixed Adult
+SECTOR_Women
+SECTOR_Youth
+PROGRAM_MODEL_Transitional
+OVERNIGHT_SERVICE_TYPE_24-Hour Women's Drop-in
+OVERNIGHT_SERVICE_TYPE_Alternative Space Protocol
+OVERNIGHT_SERVICE_TYPE_Motel/Hotel Shelter
+OVERNIGHT_SERVICE_TYPE_Shelter
+OVERNIGHT_SERVICE_TYPE_Surge site
+OVERNIGHT_SERVICE_TYPE_Top Bunk Contingency Space
+OVERNIGHT_SERVICE_TYPE_Warming Centre
+PROGRAM_AREA_Base Shelter and Overnight Services System
+PROGRAM_AREA_COVID-19 Response
+PROGRAM_AREA_Temporary Programs
+PROGRAM_AREA_Temporary Refugee Response
+PROGRAM_AREA_Winter Programs
+day_of_week_sin
+day_of_week_cos
+month_sin
+month_cos
+week_of_year_sin
+week_of_year_cos

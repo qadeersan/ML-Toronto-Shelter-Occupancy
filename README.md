@@ -49,13 +49,15 @@ pip install -r requirements.txt
 
 Execute the notebooks in order:
 
-1. **`notebooks/01_EDA.ipynb`** - Exploratory Data Analysis (already done)
+1. **`notebooks/01_EDA.ipynb`** - *(Optional)* Exploratory Data Analysis - only needed if you need to download data
 2. **`notebooks/02_data_preparation.ipynb`** - Prepare features for ML
 3. **`notebooks/03_train_test_split.ipynb`** - Split data chronologically
 4. **`notebooks/04_model_training.ipynb`** - Train 6 models (3 regression + 3 classification)
 5. **`notebooks/05_model_evaluation.ipynb`** - Evaluate all models
 
 Each notebook saves intermediate results that the next notebook uses.
+
+**See `WORKFLOW.md` for detailed step-by-step instructions including deployment.**
 
 ### 3. Test the API Locally
 
