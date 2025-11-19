@@ -85,7 +85,7 @@ def prepare_features_for_prediction(shelter_id: int, target_date: datetime) -> n
     base_row = past_data.iloc[-1].copy()
     
     # Calculate date features for target_date
-    base_row['day_of_week'] = target_date.dayofweek
+    base_row['day_of_week'] = target_date.weekday()  # 0=Monday, 6=Sunday
     base_row['month'] = target_date.month
     base_row['week_of_year'] = target_date.isocalendar().week
     
@@ -143,10 +143,9 @@ async def predict_occupancy(request: OccupancyRequest):
         predicted_rate = regression_model.predict(X)[0]
         
         # Calculate confidence interval (using model's feature importance as proxy)
-        # For simplicity, use a fixed confidence interval based on typical RMSE
         confidence_interval = {
-            "lower": max(0, predicted_rate - 5.0),  # Approximate 1 std dev
-            "upper": min(100, predicted_rate + 5.0)
+            "lower": float(max(0, predicted_rate - 5.0)),  # Convert to Python float
+            "upper": float(min(100, predicted_rate + 5.0))   # Convert to Python float
         }
         
         return {
