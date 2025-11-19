@@ -1,4 +1,4 @@
-# ML-Toronto-Shelter-Occupancy
+# ML - Toronto Shelter Occupancy & Overcapacity Predictor
 
 Machine Learning pipeline to forecast daily shelter occupancy and predict overcapacity events in Toronto, helping shelters plan resources efficiently.
 Dataset provided by Toronto Open Data for 107 shelters.
@@ -26,7 +26,7 @@ ML-Toronto-Shelter-Occupancy/
 |   ├── 02_data_preparation.ipynb # Clean and organize data
 |   ├── 03_train_test_split.ipynb # Split Data
 |   ├── 04_model_training.ipynb   # Train models & save
-|   ├── 05_model_evaluation.ipynb # Score models for best use
+|   └── 05_model_evaluation.ipynb # Score models for best use
 ├── reports/
 │   └── evaluation_results.json   # Model evaluation metrics
 ├── src/
@@ -120,6 +120,7 @@ flyctl launch
 # Deploy
 flyctl deploy
 ```
+My deployment loom:  https://www.loom.com/share/d692500050394f51a2c3854bb9f0a35e
 
 ## API Endpoints
 

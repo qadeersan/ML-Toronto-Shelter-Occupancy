@@ -1,26 +1,25 @@
-# fly.toml app configuration file generated for ml-toronto-shelter-occupancy on 2024-01-15T00:00:00Z
+# fly.toml app configuration file generated for shelter-capacity-predictor-ml on 2025-11-18T20:49:30-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "ml-toronto-shelter-occupancy"
-primary_region = "iad"
+app = 'shelter-capacity-predictor-ml'
+primary_region = 'yyz'
 
 [build]
 
 [env]
-  PORT = "8000"
+  PORT = '8000'
 
 [http_service]
   internal_port = 8000
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
 [[vm]]
-  cpu_kind = "shared"
+  memory = '512mb'
+  cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 512
-
